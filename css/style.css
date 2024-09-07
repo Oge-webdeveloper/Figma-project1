@@ -16,6 +16,7 @@
 body{
     font-family: "Poppins", sans-serif;
     background-color: var(--bg-color);
+    scroll-behavior: smooth;
 }
 
 nav{
@@ -80,6 +81,153 @@ header .hero-left a{
     text-decoration: none;
     border-bottom: 2px solid #FFFFFF;
 }
+header .hero-right div:nth-child(1){
+    height: 4px;
+    background-color: #00c7fd;
+    width: 150px;
+    position: relative;
+    left: 62%;
+}
+header .hero-right div:nth-child(3){
+    height: 4px;
+    background-color: #00c7fd;
+    width: 150px;
+    position: relative;
+    bottom: 8px;
+}
+
+.process{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.process h3{
+    text-align: center;
+    font-size: 39.1px;
+    color: #454040;
+}
+.process .process-tools{
+    /**width: 80%;
+    margin: 0 auto;***/
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+    margin-top: 64px;
+    text-align: center;
+    color: #6b6a6a;
+}
+
+.about-me{
+    display: flex;
+    padding: 90px 120px 120px 120px;
+    background-color: var(--neutral-color-white);
+    align-items: center;
+    gap: 64px;
+}
+.about-me .about-left h3{
+    color:#454040;
+    font-size: 39.06px;
+    padding-bottom: 64px;
+}
+.about-me .about-left .first-paragraph{
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 37.5px;
+    color: #454040;
+}
+.about-me .about-left .second-paragraph{
+    color:#454040;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+.about-me .about-left span{
+    color: #6b6a6a;
+}
+.about-me .about-left .third-paragraph, .fourth-paragraph{
+    color: #6B6A6A;
+    padding-top: 32px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+.about-me .about-left .fourth-paragraph{
+    padding-bottom: 64px;
+}
+.about-me .about-left a{
+    color: #06013d;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+    border-bottom: 2px solid #06013D;
+}
+.about-me .about-right{
+    padding-top: 150px;
+}
+
+.featured-projects{
+    padding-top: 120px;
+}
+.featured-projects .marque{
+    padding-bottom: 90px;
+    display: flex;
+    gap: 48px;
+    animation-name: move;
+    animation-delay: 0s;
+    animation-duration: 20000ms;
+    animation-iteration-count: infinite;
+}
+.featured-projects .marque h3{
+    color:#06013D;
+    gap: 20px;
+    font-size: 32px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+.featured-projects .marque h3 span{
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background-color: #06013d;
+}
+
+.projects {
+    display: flex;
+    align-items: center;
+    gap:80px;
+    padding: 0px 120px 120px 120px;
+}
+.projects .project-details h4{
+    color: #342A2A;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+}
+.projects .project-details p{
+    color:#6B6A6A;
+    font-weight:400;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 24px 0;
+}
+.projects .project-details a{
+    color: white;
+    background-color: #0A1441;
+    padding: 10px 15px 10px 15px;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -111,7 +259,48 @@ header .hero-left a{
     nav .menu-icon{
         display: block;
     }
+
     header{
         flex-direction: column;
+        padding: 90px 32px 120px 32px;
+    }
+
+    .process .process-tools{
+        flex-wrap: wrap;
+    }
+
+    .about-me{
+        flex-direction: column;
+        padding: 90px 32px 120px 32px;
+        gap:48px;
+    }
+    .projects{
+        flex-direction: column;
+        padding: 90px 32px 0px 32px;
+        gap:48px;
+    }
+    .projects .project-details{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+/*****ANIMATION*****/
+
+@keyframes move {
+    from{
+        margin-left: 0;
+    }
+    to{
+        margin-left: -100%;
     }
 }
