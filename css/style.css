@@ -164,6 +164,9 @@ header .hero-right div:nth-child(3){
 .about-me .about-right{
     padding-top: 150px;
 }
+.about-me .about-right img{
+    border: 1px solid grey;
+}
 
 .featured-projects{
     padding-top: 120px;
@@ -176,6 +179,7 @@ header .hero-right div:nth-child(3){
     animation-delay: 0s;
     animation-duration: 20000ms;
     animation-iteration-count: infinite;
+    overflow-x: none;
 }
 .featured-projects .marque h3{
     color:#06013D;
@@ -276,18 +280,6 @@ footer .right .bookmark{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /*******MEDIA QUERY*******/
 @media only screen and (max-width: 768px) {
     nav{
@@ -317,6 +309,12 @@ footer .right .bookmark{
         flex-direction: column;
         padding: 90px 32px 120px 32px;
     }
+    header .hero-right img{
+        width:100%;
+    }
+    header .hero-right div:nth-child(1){
+        display: none;
+    }
 
     .process .process-tools{
         flex-wrap: wrap;
@@ -325,12 +323,26 @@ footer .right .bookmark{
     .about-me{
         flex-direction: column;
         padding: 90px 32px 120px 32px;
-        gap:48px;
+        gap:0px;
     }
+    .about-me .about-right img{
+        width:100%;
+    }
+
+    .featured-projects .marque{
+        gap:24px;
+    }
+    .featured-projects .marque h3{
+        font-size: 14px;
+    }
+
     .projects{
         flex-direction: column;
         padding: 90px 32px 0px 32px;
         gap:48px;
+    }
+    .projects .project-screenshot img{
+        width:100%;
     }
     .projects .project-details{
         display: flex;
@@ -349,13 +361,9 @@ footer .right .bookmark{
     }
     footer .left .links{
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
     }
 }
-
-
-
-
 
 
 
