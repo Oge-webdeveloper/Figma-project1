@@ -300,9 +300,11 @@ footer .right .bookmark{
         padding: 32px 0;
         left: 50%;
         transform: translate(-50%, 0);
+        z-index: 100;
     }
     nav .menu-icon{
         display: block;
+        cursor:pointer;
     }
 
     header{
